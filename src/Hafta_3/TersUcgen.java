@@ -7,10 +7,10 @@ public class TersUcgen {
 //Kullanıcıdan Girdi Alma
         Scanner input = new Scanner(System.in);
         System.out.print("Basamak Sayisini Giriniz : ");
-        int basNum = input.nextInt();
+        int digitNum = input.nextInt();
 //üçgen oluşturma
-        int tempBasNum = basNum;
-        for (int i = 1; i <= basNum; i++) {
+        int tempBasNum = digitNum;
+        for (int i = 1; i <= digitNum; i++) {
             for (int j = 1; j < (i); j++) {   //Başa boşluk koyma
                 System.out.print(" ");
             }

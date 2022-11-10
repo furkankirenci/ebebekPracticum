@@ -9,17 +9,17 @@ public class MukemmelSayi {
         System.out.print("Bir sayi giriniz : ");
         int num = inp.nextInt();
         int i = 1;
-        int toplam = 0;
+        int total = 0;
 //Sayıya bölünen sayıları bulma
         while (i < num) {
             if (num % i == 0) {
-                toplam += i;
+                total += i;
                 i++;
             } else {
                 ++i;
             }
         }
-        if (toplam == num){
+        if (total == num){
             System.out.println(num+" bir mukemmel sayidir.");
         }else {
             System.out.println(num+" bir mukemmel sayi degildir.");

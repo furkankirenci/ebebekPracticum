@@ -3,12 +3,12 @@ package Hafta_3;
 import java.util.Scanner;
 
 public class RecursiveOruntu {
-    static int oruntu(int n, int i) {
+    static int pattern(int n, int i) {
 //Örüntü oluşturma
         if (n > 0) {
             System.out.println(n);
             i++;
-            return oruntu(n - 5, i);
+            return pattern(n - 5, i);
 
         } else {
             System.out.println(n);
@@ -25,6 +25,6 @@ public class RecursiveOruntu {
         Scanner input = new Scanner(System.in);
         System.out.print("Bir sayi  giriniz : ");
         int n = input.nextInt();
-        oruntu(n, 1);
+        pattern(n, 1);
     }
 }
